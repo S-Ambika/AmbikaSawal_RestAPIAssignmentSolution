@@ -10,12 +10,6 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import com.greatLearning.app.entity.Role;
 import com.greatLearning.app.entity.User;
 
-
-
-
-
-
-@SuppressWarnings("serial")
 public class AppUserDetails implements org.springframework.security.core.userdetails.UserDetails {
 
     private User user;

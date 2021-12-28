@@ -22,7 +22,7 @@ public interface EmployeeService {
 
 	public List<Employee> getEmployeesByOrder(String sortBy);
 
-	List<Employee> getEmployeesByFirstName(String firstName);
+	public List<Employee> getEmployeesByFirstName(String firstName);
 
 	public User saveUser(User user);
 
