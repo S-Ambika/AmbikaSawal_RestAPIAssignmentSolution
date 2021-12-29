@@ -1,0 +1,15 @@
+Admin Credentials :
+Username - admin
+password - admin123
+
+User Credentials :
+Username-user
+password - user123
+
+Roles : ADMIN , USER
+ADMIN can access all APIS - ADD,DELETE,UPDATE along with other APIs
+USER can access -get Employee By ID, get List Of Employees, get Employees By Sorting, search Employees By FirstName
+
+
+ScreenRecording --> Google Drive link:
+https://drive.google.com/file/d/1knLxx0O1RvWoak6FR9k5jn1E3IyWRSmB/view?usp=sharing
