@@ -103,7 +103,6 @@ public class EmployeeController {
 	 * http://localhost:8080/api/employees/{employee_id}1
 	 */
 	@DeleteMapping("/employees/{employee_id}")
-	@ResponseBody
 	public String deleteEmployeeById(@PathVariable int employee_id) {
 		return employeeService.deleteEmployeeById(employee_id);
 	}
