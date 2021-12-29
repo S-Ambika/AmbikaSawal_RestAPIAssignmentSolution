@@ -61,9 +61,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		.antMatchers(HttpMethod.GET, "/api/employees/sort").hasAnyAuthority("USER", "ADMIN")
 		.antMatchers(HttpMethod.POST, "/api/employees").hasAuthority("ADMIN")
 		.antMatchers(HttpMethod.PUT, "/api/employees").hasAuthority("ADMIN")
-		.antMatchers(HttpMethod.DELETE, "/api/employees").hasAuthority("ADMIN")
-		.antMatchers(HttpMethod.GET, "/api/employees/search").hasAnyAuthority("ADMIN", "USER").anyRequest()
-		.authenticated().and().httpBasic()
+		.antMatchers(HttpMethod.DELETE, "/api/employees/*").hasAuthority("ADMIN")
+		.antMatchers(HttpMethod.GET, "/api/employees/search").hasAnyAuthority("ADMIN", "USER")
+		.anyRequest().authenticated().and().httpBasic()
 		.and().cors().and().csrf().disable();
 	}
 
